@@ -1,0 +1,11 @@
+title: Ordinary Grace
+author: William Kent Krueger
+isbn: 1451645856
+
+title: A Faithful Son
+author: Michael Scott Garvin
+isbn: 1519414730
+
+title: The Legacy of Lucy Harte
+author: Emma Heatherington
+isbn: 0008194866

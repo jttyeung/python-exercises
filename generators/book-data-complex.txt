@@ -1,0 +1,12 @@
+title: First and Only: A psychological thriller
+author: Peter Flannery
+isbn: 0957091907
+price: 9.57
+
+price: 8.92
+author: W. Bruce Cameron
+isbn: 0765330342
+title: A Dog's Purpose: A Novel for Humans
+
+title: A Man Called Ove
+author: Fredrik Backman
