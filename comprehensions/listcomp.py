@@ -60,6 +60,9 @@ squares_of_evens = [x**2 for x in range(9) if x % 2 == 0]
 def palindromes(lst):
     return [word + word[::-1] for word in lst]
 
+def starting_with(letter, names):
+    return [name for name in names if name[0].lower() == letter.lower()]
+
 # Do not edit any code below this line!
 
 
