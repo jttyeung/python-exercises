@@ -54,23 +54,21 @@ BLASTOFF!
 # Write your code here:
 
 def evens_up_to(num):
-    n = num
-    while n <= 8:
-      for n in range(num):
-          yield n + 2
-          n += 2
+    n = 0
+    while n < num:
+        yield n + 2
+        n += 2
 
 def squares_up_to(num):
-    while num <= 16:
-      for n in range(num):
-          yield n ** 2
-          n += 1
+    n = 1
+    while n ** 2 <= num:
+        yield n ** 2
+        n += 1
 
 def countdown(num):
     while num > 0:
-        for n in range(num):
-            yield n -1
-            n -= 1
+        yield num
+        num -= 1
     yield 'BLASTOFF!'
 
 # Do not edit any code below this line!
