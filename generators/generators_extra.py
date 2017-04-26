@@ -66,6 +66,39 @@ Traceback (most recent call last):
 StopIteration
 
 
+Next, make your own version of enumerate.
+(No cheating!)
+
+>>> pets = ["goat", "frog", "turtle"]
+>>> enum1 = myenumerate(pets)
+>>> type(enum1)
+<type 'generator'>
+>>> next(enum1)
+(0, 'goat')
+>>> next(enum1)
+(1, 'frog')
+>>> next(enum1)
+(2, 'turtle')
+>>> next(enum1)
+Traceback (most recent call last):
+...
+StopIteration
+
+>>> enum2 = myenumerate(pets, 1)
+>>> type(enum2)
+<type 'generator'>
+>>> next(enum2)
+(1, 'goat')
+>>> next(enum2)
+(2, 'frog')
+>>> next(enum2)
+(3, 'turtle')
+>>> next(enum2)
+Traceback (most recent call last):
+...
+StopIteration
+
+
 The built-in map() takes a function object, and a sequence, applying
 that function to every item. Re-create it as mymap().
 
@@ -166,6 +199,13 @@ def myrange(start, end=None, step=1):
         yield start
         start += step
 
+
+def myenumerate(lst, i=0):
+    n = 0
+    while n < len(lst):
+        yield i, lst[n]
+        n += 1
+        i += 1
 
 
 
