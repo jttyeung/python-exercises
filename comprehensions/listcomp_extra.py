@@ -61,9 +61,10 @@ cyan belt
 cyan cape
 
 '''
-x = [0, 1, 2]
-y = [0, 1]
-pairs = [(numx, numy) for numx in x for numy in y]
+
+pairs = [(x, y)
+        for x in range(3)
+        for y in range(2)]
 
 colors = ['aquamarine', 'orange', 'teal', 'cyan']
 
