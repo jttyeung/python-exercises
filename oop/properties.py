@@ -40,6 +40,27 @@ ValueError: Invalid section "upper_mezzanine"
 
 # Write your code here:
 
+class ConcertTicket(object):
+    SECTIONS = {'lower', 'premier', 'mezzanine', 'floor'}
+
+    def __init__(self, price, section):
+        self._price = price
+        self._section = section
+
+    @property
+    def price(self):
+        return self._price
+
+    @property
+    def section(self):
+        return self._section
+
+    @section.setter
+    def section(self, section):
+        if section not in self.SECTIONS:
+            raise ValueError('Invalid section "{}"'.format(section))
+        self._section = section
+
 
 
 # Do not edit any code below this line!
@@ -49,3 +70,10 @@ if __name__ == '__main__':
     doctest.testmod()
 
 # Copyright 2015-2017 Aaron Maxwell. All rights reserved.
+
+
+
+
+
+
+

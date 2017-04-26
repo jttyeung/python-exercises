@@ -53,8 +53,12 @@ Make it case-insensitive too:
 '''
 
 # Write your code here:
+squares = [x**2 for x in range(9)]
+cubes = [x**3 for x in range(6)]
+squares_of_evens = [x**2 for x in range(9) if x % 2 == 0]
 
-
+def palindromes(lst):
+    return [word + word[::-1] for word in lst]
 
 # Do not edit any code below this line!
 
