@@ -70,8 +70,14 @@ colors = ['aquamarine', 'orange', 'teal', 'cyan']
 garments = ['hat', 'belt', 'bell bottoms', 'cape', 'trench coat']
 
 # Write your code here:
-combos = [color + ' ' + garment for color in colors for garment in garments]
-brief_combos = [color + ' ' + garment for color in colors for garment in garments if garment in {'hat', 'belt', 'cape'}]
+combos = [color + ' ' + garment
+        for color in colors
+        for garment in garments]
+
+brief_combos = [color + ' ' + garment
+                for color in colors
+                for garment in garments
+                if garment in {'hat', 'belt', 'cape'}]
 
 # Do not edit any code below this line!
 
