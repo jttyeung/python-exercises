@@ -157,6 +157,17 @@ StopIteration
 
 # Write your code here:
 
+def myrange(start, end=None, step=1):
+    if end is None:
+        end = start
+        start = 0
+
+    while start < end:
+        yield start
+        start += step
+
+
+
 
 
 # Do not edit any code below this line!
