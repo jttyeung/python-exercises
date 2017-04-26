@@ -164,6 +164,13 @@ def fullpath(filename):
 
 # Write your code here:
 
+def words_in_text(text_file):
+    with open(text_file) as file:
+        for line in file:
+            line = line.rstrip()
+            for word in line:
+                yield word
+
 
 
 # Do not edit any code below this line!
