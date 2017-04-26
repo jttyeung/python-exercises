@@ -61,14 +61,17 @@ cyan belt
 cyan cape
 
 '''
+x = [0, 1, 2]
+y = [0, 1]
+pairs = [(numx, numy) for numx in x for numy in y]
 
 colors = ['aquamarine', 'orange', 'teal', 'cyan']
 
 garments = ['hat', 'belt', 'bell bottoms', 'cape', 'trench coat']
 
 # Write your code here:
-
-
+combos = [color + ' ' + garment for color in colors for garment in garments]
+brief_combos = [color + ' ' + garment for color in colors for garment in garments if garment in {'hat', 'belt', 'cape'}]
 
 # Do not edit any code below this line!
 
