@@ -38,7 +38,11 @@ def get_gpa(who):
 # Copy in the code for max_by_key here:
 
 def max_by_key(items, key):
-    return
+    biggest = items[0]
+    for item in items[1:]:
+        if key(item) > key(biggest):
+            biggest = item
+    return biggest
 
 # Do not edit any code below this line!
 
