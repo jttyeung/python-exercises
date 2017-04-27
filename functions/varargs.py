@@ -69,6 +69,38 @@ Going to x=8, y=33, z=-4
 
 # Write your code here:
 
+def set_destination(x, y, z):
+    print 'Going to x={}, y={}, z={}'.format(x, y, z)
+
+def product(a, b, c):
+    return a * b * c
+
+def total(u, v, w):
+    return u + v + w
+
+def max_even(*nums):
+    biggest = None
+    for num in nums:
+        if num % 2 == 0:
+            if num == None or num > biggest:
+                biggest = num
+    return biggest
+
+def val_for_longest_key(**kwargs):
+    longest_key = None
+    longest_value = None
+    for key, value in kwargs.items():
+        if longest_key == None or len(key) > len(longest_key):
+            longest_key, longest_value = key, value
+    return longest_value
+
+def key_for_biggest_value(**kwargs):
+    largest_key = None
+    largest_val = None
+    for key, value in kwargs.items():
+        if largest_val == None or value > largest_val:
+            largest_key, largest_val = key, value
+    return largest_key
 
 
 # Do not edit any code below this line!
