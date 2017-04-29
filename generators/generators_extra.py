@@ -207,6 +207,18 @@ def myenumerate(lst, i=0):
         n += 1
         i += 1
 
+def mymap(function, lst):
+    i = 0
+    while i < len(lst):
+        yield function(lst[i])
+        i += 1
+
+def myzip(lst1, lst2):
+    lst1 = iter(lst1)
+    lst2 = iter(lst2)
+
+    while True:
+        yield (next(lst1), next(lst2))
 
 
 
